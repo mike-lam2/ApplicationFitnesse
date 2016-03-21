@@ -1,6 +1,6 @@
 !3 !-fit-!
-|'''Date: '''|!-4:43:55 PM (EDT) on Monday, March 21, 2016-!|
+|'''Date: '''|!-5:09:04 PM (EDT) on Monday, March 21, 2016-!|
 |'''Test Page: '''|.FitNesse.ApplicationTesting.BusinessRequirements|
-|'''Command: '''|!-java -cp fitnesse.jar;"../build; ../../_libs-httpunit-1.7/libs/activation-1.1.jar;../../_libs-httpunit-1.7/libs/httpunit.jar;../../_libs-httpunit-1.7/libs/js-1.6R5.jar;../../_libs-httpunit-1.7/libs/jtidy-4aug2000r7-dev.jar;../../_libs-httpunit-1.7/libs/junit-3.8.1.jar;../../_libs-httpunit-1.7/libs/mail-1.4.jar;../../_libs-httpunit-1.7/libs/nekohtml-0.9.5.jar;../../_libs-httpunit-1.7/libs/servlet-api-2.4.jar;../../_libs-httpunit-1.7/libs/xercesImpl-2.6.1.jar;../../_libs-httpunit-1.7/libs/xmlParserAPIs-2.6.1.jar;";fitnesse.jar;classes fit.FitServer Michel-i5-PC 80 5-!|
+|'''Command: '''|!-java -cp fitnesse.jar;"../build; ../lib/activation-1.1.jar;../lib/httpunit.jar;../lib/js-1.6R5.jar;../lib/jtidy-4aug2000r7-dev.jar;../lib/junit-3.8.1.jar;../lib/mail-1.4.jar;../lib/nekohtml-0.9.5.jar;../lib/servlet-api-2.4.jar;../lib/xercesImpl-2.6.1.jar;../lib/xmlParserAPIs-2.6.1.jar;";fitnesse.jar;classes fit.FitServer Michel-i5-PC 80 1-!|
 |'''Exit code: '''|!-1-!|
-|'''Time elapsed: '''|!-8.783 seconds-!|
+|'''Time elapsed: '''|!-8.751 seconds-!|
