@@ -3,4 +3,4 @@
 
 |ml.fixture.HttpConnectFixture|
 |path|getResponseCode?|getServerType?|
-|/|200|Jetty(9.2.15.v20160210)|
+|/application|200|Jetty(9.2.15.v20160210)|

@@ -24,11 +24,15 @@ public class HttpConnect {
 	String address = "";
 	boolean useProxy;
 
-	static final String[] NO_PROXY = new String[] { "localhost", "(\\w)*.isvcs.net", "(\\w)*.prod.net", "(\\w)*.dev.net", "(\\w)*.tst.net", "7.(\\w)*.(\\w)*.(\\w)*", "(\\w)*.rc.gc.ca",
-			"(\\w)*.cra-arc.net", "(\\w)*.dev.dce-eir.net", "(\\w)*.tst.dce-eir.net", "(\\w)*.omega.dce-eir.net", "(\\w)*.prv", "(\\w)*.hrdc-drhc.net", "(\\w)*.service.gc.ca", "7.29.239.245",
-			"7.29.239.243", "courrielweb.canada.ca:443", "courrielweb-webmail.canada.ca:443", "msg.ssctest.itsso.gc.ca:443", "webmail.canada.ca:443", "webmail-courrielweb.canada.ca:443",
-			"(\\w)*.ctst.canada.ca:443", "(\\w)*.email-courriel.canada.ca", "(\\w)*.courriel-email.canada.ca", "autodiscover.canada.ca", "email-courriel.canada.ca", "emailportal.canada.ca",
-			"emailportal-portailcourriel.canada.ca", "portailcourriel.canada.ca", "portailcourriel-emailportal.canada.ca", "(\\w)*.telephony.local" };
+	static final String[] NO_PROXY = new String[] { "localhost", "(\\w)*.isvcs.net", "(\\w)*.prod.net", "(\\w)*.dev.net",
+			"(\\w)*.tst.net", "7.(\\w)*.(\\w)*.(\\w)*", "(\\w)*.rc.gc.ca", "(\\w)*.cra-arc.net", "(\\w)*.dev.dce-eir.net",
+			"(\\w)*.tst.dce-eir.net", "(\\w)*.omega.dce-eir.net", "(\\w)*.prv", "(\\w)*.hrdc-drhc.net",
+			"(\\w)*.service.gc.ca", "7.29.239.245", "7.29.239.243", "courrielweb.canada.ca:443",
+			"courrielweb-webmail.canada.ca:443", "msg.ssctest.itsso.gc.ca:443", "webmail.canada.ca:443",
+			"webmail-courrielweb.canada.ca:443", "(\\w)*.ctst.canada.ca:443", "(\\w)*.email-courriel.canada.ca",
+			"(\\w)*.courriel-email.canada.ca", "autodiscover.canada.ca", "email-courriel.canada.ca", "emailportal.canada.ca",
+			"emailportal-portailcourriel.canada.ca", "portailcourriel.canada.ca", "portailcourriel-emailportal.canada.ca",
+			"(\\w)*.telephony.local" };
 
 	public static final int GET = 0;
 	public static final int POST = 1;
@@ -73,13 +77,24 @@ public class HttpConnect {
 			request = new PostMethodWebRequest(this.address + url);
 		}
 		// response = wc.getResponse(this.address + url);
-		// PostMethodWebRequest request = new PostMethodWebRequest(this.address + url);
+		// PostMethodWebRequest request = new PostMethodWebRequest(this.address +
+		// url);
 		response = wc.getResponse(request);
-		for (int i = 0; i < response.getHeaderFields("SET-COOKIE").length; i++) { // not all cookies are handled so this fix
+		for (int i = 0; i < response.getHeaderFields("SET-COOKIE").length; i++) { // not
+																																							// all
+																																							// cookies
+																																							// are
+																																							// handled
+																																							// so
+																																							// this
+																																							// fix
 			// it?
-			String name = response.getHeaderFields("SET-COOKIE")[i].substring(0, response.getHeaderFields("SET-COOKIE")[i].indexOf('='));
+			String name = response.getHeaderFields("SET-COOKIE")[i].substring(0,
+					response.getHeaderFields("SET-COOKIE")[i].indexOf('='));
 			if (wc.getCookieValue(name) == null) {
-				String value = response.getHeaderFields("SET-COOKIE")[i].substring(response.getHeaderFields("SET-COOKIE")[i].indexOf('=') + 1, response.getHeaderFields("SET-COOKIE")[i].length());
+				String value = response.getHeaderFields("SET-COOKIE")[i].substring(
+						response.getHeaderFields("SET-COOKIE")[i].indexOf('=') + 1,
+						response.getHeaderFields("SET-COOKIE")[i].length());
 				int idx = value.indexOf(';');
 				if (idx > 0) {
 					value = value.substring(0, idx);
