@@ -1,6 +1,10 @@
-!path ../build; ../../_libs-httpunit-1.7/libs/activation-1.1.jar;../../_libs-httpunit-1.7/libs/httpunit.jar;../../_libs-httpunit-1.7/libs/js-1.6R5.jar;../../_libs-httpunit-1.7/libs/jtidy-4aug2000r7-dev.jar;../../_libs-httpunit-1.7/libs/junit-3.8.1.jar;../../_libs-httpunit-1.7/libs/mail-1.4.jar;../../_libs-httpunit-1.7/libs/nekohtml-0.9.5.jar;../../_libs-httpunit-1.7/libs/servlet-api-2.4.jar;../../_libs-httpunit-1.7/libs/xercesImpl-2.6.1.jar;../../_libs-httpunit-1.7/libs/xmlParserAPIs-2.6.1.jar;
+!path ../lib/appfit.jar;../lib/activation-1.1.jar;../lib/httpunit.jar;../lib/js-1.6R5.jar;../lib/jtidy-4aug2000r7-dev.jar;../lib/junit-3.8.1.jar;../lib/mail-1.4.jar;../lib/nekohtml-0.9.5.jar;../lib/servlet-api-2.4.jar;../lib/xercesImpl-2.6.1.jar;../lib/xmlParserAPIs-2.6.1.jar;
 !contents -g
 
 |ml.fixture.HttpConnectFixture|
 |path|getResponseCode?|getServerType?|
 |/application|200|Jetty(9.2.15.v20160210)|
+
+
+
+path ../build; ../lib/activation-1.1.jar;../lib/httpunit.jar;../lib/js-1.6R5.jar;../lib/jtidy-4aug2000r7-dev.jar;../lib/junit-3.8.1.jar;../lib/mail-1.4.jar;../lib/nekohtml-0.9.5.jar;../lib/servlet-api-2.4.jar;../lib/xercesImpl-2.6.1.jar;../lib/xmlParserAPIs-2.6.1.jar;
