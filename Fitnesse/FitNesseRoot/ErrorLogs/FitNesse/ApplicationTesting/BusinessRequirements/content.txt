@@ -1,6 +1,6 @@
 !3 !-fit-!
-|'''Date: '''|!-5:09:04 PM (EDT) on Monday, March 21, 2016-!|
+|'''Date: '''|!-6:11:13 PM (EDT) on Monday, March 21, 2016-!|
 |'''Test Page: '''|.FitNesse.ApplicationTesting.BusinessRequirements|
-|'''Command: '''|!-java -cp fitnesse.jar;"../build; ../lib/activation-1.1.jar;../lib/httpunit.jar;../lib/js-1.6R5.jar;../lib/jtidy-4aug2000r7-dev.jar;../lib/junit-3.8.1.jar;../lib/mail-1.4.jar;../lib/nekohtml-0.9.5.jar;../lib/servlet-api-2.4.jar;../lib/xercesImpl-2.6.1.jar;../lib/xmlParserAPIs-2.6.1.jar;";fitnesse.jar;classes fit.FitServer Michel-i5-PC 80 1-!|
+|'''Command: '''|!-java -cp fitnesse.jar;appfit.jar;activation-1.1.jar;httpunit.jar;js-1.6R5.jar;jtidy-4aug2000r7-dev.jar;junit-3.8.1.jar;mail-1.4.jar;nekohtml-0.9.5.jar;servlet-api-2.4.jar;xercesImpl-2.6.1.jar;xmlParserAPIs-2.6.1.jar;;fitnesse.jar;classes fit.FitServer Michel-i5-PC 80 3-!|
 |'''Exit code: '''|!-1-!|
-|'''Time elapsed: '''|!-8.751 seconds-!|
+|'''Time elapsed: '''|!-8.798 seconds-!|
