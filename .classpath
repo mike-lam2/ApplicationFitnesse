@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="src_test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+  <classpathentry combineaccessrules="false" kind="src" path="/_libs-httpunit-1.7"/>
+  <classpathentry combineaccessrules="false" kind="src" path="/_libs-commons-20150819"/>
+  <classpathentry combineaccessrules="false" kind="src" path="/_libs-commons-lang3-3.1"/>
+  <classpathentry combineaccessrules="false" kind="src" path="/_libs-fitnesse-20150819"/>
+  <classpathentry kind="lib" path="Fitnesse/fitnesse.jar"/>
+  <classpathentry kind="output" path="build"/>
+</classpath>

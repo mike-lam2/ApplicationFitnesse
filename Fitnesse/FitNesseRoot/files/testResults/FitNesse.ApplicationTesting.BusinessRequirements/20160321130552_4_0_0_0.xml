@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20111026</FitNesseVersion>
+  <rootPath>BusinessRequirements</rootPath>
+    <result>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>3166</runTimeInMillis>
+    <content><![CDATA[<span class="meta">classpath: ../build; ../../_libs-httpunit-1.7/libs/activation-1.1.jar;../../_libs-httpunit-1.7/libs/httpunit.jar;../../_libs-httpunit-1.7/libs/js-1.6R5.jar;../../_libs-httpunit-1.7/libs/jtidy-4aug2000r7-dev.jar;../../_libs-httpunit-1.7/libs/junit-3.8.1.jar;../../_libs-httpunit-1.7/libs/mail-1.4.jar;../../_libs-httpunit-1.7/libs/nekohtml-0.9.5.jar;../../_libs-httpunit-1.7/libs/servlet-api-2.4.jar;../../_libs-httpunit-1.7/libs/xercesImpl-2.6.1.jar;../../_libs-httpunit-1.7/libs/xmlParserAPIs-2.6.1.jar;</span><br/><div class="toc1">
+	<div class="contents">
+		<b>Contents:</b>
+		<ul/>
+	</div>
+</div>
+<br/><br/><table border="1" cellspacing="0">
+	<tr>
+		<td colspan="3">ml.fixture.HttpConnectFixture</td>
+	</tr>
+	<tr>
+		<td>path</td>
+		<td>getResponseCode?</td>
+		<td>getTitle?</td>
+	</tr>
+	<tr>
+		<td>/application</td>
+		<td class="pass">200</td>
+		<td class="pass">Audit enquiries</td>
+	</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+	<tr>
+		<td colspan="3">ml.fixture.HttpConnectFixture</td>
+	</tr>
+	<tr>
+		<td>path</td>
+		<td>contains</td>
+		<td>getContains?</td>
+	</tr>
+	<tr>
+		<td>/application</td>
+		<td>&lt;H1 class="page-header" id="wb-cont" property="name"&gt;My Messages&lt;/H1&gt;</td>
+		<td class="pass">true</td>
+	</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+	<tr>
+		<td colspan="3">ml.fixture.HttpConnectFixture</td>
+	</tr>
+	<tr>
+		<td>path</td>
+		<td>contains</td>
+		<td>getContains?</td>
+	</tr>
+	<tr>
+		<td>/application</td>
+		<td>&lt;A href="<a href="http://www.cra-arc.gc.ca/menu-eng.html"&gt;&lt;SPAN&gt;Message">http://www.cra-arc.gc.ca/menu-eng.html"&gt;&lt;SPAN&gt;Message</a> Centre BUG014&lt;/SPAN&gt; &lt;/A&gt;</td>
+		<td class="pass">true</td>
+	</tr>
+</table>
+]]></content>
+    <relativePageName>BusinessRequirements</relativePageName>
+    
+    
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>0</totalRunTimeInMillis>
+  
+</testResults>
+

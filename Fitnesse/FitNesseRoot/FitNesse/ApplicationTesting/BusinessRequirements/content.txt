@@ -1,0 +1,14 @@
+!path ../build; ../../_libs-httpunit-1.7/libs/activation-1.1.jar;../../_libs-httpunit-1.7/libs/httpunit.jar;../../_libs-httpunit-1.7/libs/js-1.6R5.jar;../../_libs-httpunit-1.7/libs/jtidy-4aug2000r7-dev.jar;../../_libs-httpunit-1.7/libs/junit-3.8.1.jar;../../_libs-httpunit-1.7/libs/mail-1.4.jar;../../_libs-httpunit-1.7/libs/nekohtml-0.9.5.jar;../../_libs-httpunit-1.7/libs/servlet-api-2.4.jar;../../_libs-httpunit-1.7/libs/xercesImpl-2.6.1.jar;../../_libs-httpunit-1.7/libs/xmlParserAPIs-2.6.1.jar;
+!contents -g
+
+|ml.fixture.HttpConnectFixture|
+|path|getResponseCode?|getTitle?|
+|/application|200|Audit enquiries|
+
+|ml.fixture.HttpConnectFixture|
+|path|contains|getContains?|
+|/application|<H1 class="page-header" id="wb-cont" property="name">My Messages</H1>|true|
+
+|ml.fixture.HttpConnectFixture|
+|path|contains|getContains?|
+|/application|<A href="http://www.cra-arc.gc.ca/menu-eng.html"><SPAN>Message Centre</SPAN> </A>|true|
